@@ -85,8 +85,10 @@ Proximity Based social networking platform, where people can ask questions and e
     * Send meesage
     
 * Send Meesage 
-   *home 
-   *profile
+   * home 
+   * profile
+
+
 
 
 ## Wireframes
