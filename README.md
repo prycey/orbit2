@@ -87,7 +87,7 @@ Proximity Based social networking platform, where people can ask questions and e
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://github.com/prycey/orbit/blob/master/orbit.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
