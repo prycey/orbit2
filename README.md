@@ -18,7 +18,7 @@ Proximity Based social networking platform, where people can ask questions and e
 - **Story:** Asking questions and for items of people nearby
 - **Market:** Students and professionals in closed spaces 
 - **Habit:** looking for interesting leads or questions
-- **Scope:**
+
 
 ## Product Spec
 
@@ -31,13 +31,15 @@ Proximity Based social networking platform, where people can ask questions and e
 * History page of previous leads followed
 
 
+
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
-* Payments through the app for selling items
-* Sleek ui
-* item bidding group enabled messaging
+* Users can exchange money for goods and services
+* UI is appealing 
+* Users can see other users on a map
+* Push notification when there is a post around around users
+* Users can sort by message types
+
 
 ### 2. Screen Archetypes
 
@@ -48,10 +50,10 @@ Proximity Based social networking platform, where people can ask questions and e
 * Home/stream
     * Users can send messages that only broadcast to users in a certain radius
     * Users Messages have  types inquires, items, trades, revision help, study budy request
-* All Messages and items
-    * Users can send messages that only broadcast to users in a certain radius
-    * Users Messages have  types inquires, items, trades, revision help, study budy request
 * Individual item selected
+   * Users can add comments to individual posts
+* Map
+   * Users can see comments
 
    
 
@@ -62,7 +64,8 @@ Proximity Based social networking platform, where people can ask questions and e
 * Home
 * All
 * Send meesage
-* Individual
+* Profile
+* Map
 
 **Flow Navigation** (Screen to Screen)
 
@@ -72,6 +75,7 @@ Proximity Based social networking platform, where people can ask questions and e
    
 * Register
     * login
+
 * Home/stream
     * Send meesage
     * login
@@ -86,16 +90,13 @@ Proximity Based social networking platform, where people can ask questions and e
 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 <img src="https://github.com/prycey/orbit/blob/master/orbit.jpg" width=600>
 
-### [BONUS] Digital Wireframes & Mockups
 
-### [BONUS] Interactive Prototype
 
 ## Schema 
 ### Models
-#### Post
+#### Messages
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
@@ -105,6 +106,20 @@ Proximity Based social networking platform, where people can ask questions and e
    | commentsCount | Number   | number of comments that has been posted to an image |
    | createdAt     | DateTime | date when post is created (default field) |
    | updatedAt     | DateTime | date when post is last updated (default field) |
+   
+#### Comments 
+ | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | message       | Pointer to message| image author |
+   | commentobj       | Pointer to comment| image author |
+   | comment       | String   | image caption by author |
+   | commentsCount | Number   | number of comments that has been posted to an image |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | updatedAt     | DateTime | date when post is last updated (default field) |
+#### User
+####
+  
 ### Networking
 #### List of network requests by screen
    - Home Feed Screen
